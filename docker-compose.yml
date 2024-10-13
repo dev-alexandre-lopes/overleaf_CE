@@ -106,6 +106,7 @@ services:
     mongo:
         restart: always
         image: mongo:5.0
+        command: mongod --replSet rs0
         container_name: mongo
         expose:
             - 27017
